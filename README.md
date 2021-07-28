@@ -2,9 +2,6 @@
 
 ## Option 2: Clustering Crypto
 
-![Cryptocurrencies coins](Images/cryptocurrencies-coins.jpg)
-_[Cryptocurrencies coins by Worldspectrum](https://www.pexels.com/@worldspectrum?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) | [Free License](https://www.pexels.com/photo-license/)_
-
 ### Background
 
 You are a Senior Manager at the Advisory Services team on a [Big Four firm](https://en.wikipedia.org/wiki/Big_Four_accounting_firms). One of your most important clients, a prominent investment bank, is interested in offering a new cryptocurrencies investment portfolio for its customers, however, they are lost in the immense universe of cryptocurrencies. They ask you to help them make sense of it all by generating a report of what cryptocurrencies are available on the trading market and how they can be grouped using classification.  
@@ -99,47 +96,7 @@ In this section, you will create some data visualization to present the final re
 
 3. Create a scatter plot using `hvplot.scatter`, to present the clustered data about cryptocurrencies having `x="TotalCoinsMined"` and `y="TotalCoinSupply"` to contrast the number of available coins versus the total number of mined coins. Use the `hover_cols=["CoinName"]` parameter to include the cryptocurrency name on each data point.
 
-### Optional Challenge
 
-For the challenge section, you have to upload your Jupyter notebook to Amazon SageMaker and deploy it.
-
-The `hvplot` and Plotly Express libraries are not included in the built-in anaconda environments, so for this challenge section, you should use the `altair` library instead.
-
-Perform the following tasks:
-
-1. Upload your Jupyter notebook and rename it as `crypto_clustering_sm.ipynb`
-
-2. Select the `conda_python3` environment.
-
-3. Install the `altair` library by running the following code before the initial imports.
-
-  ```python
-  !pip install -U altair
-  ```
-
-4. Use the `altair` scatter plot to create the Elbow Curve.
-
-5. Use the `altair` scatter plot, instead of the 3D-Scatter from Plotly Express, to visualize the clusters. Since this is a 2D-Scatter, use `x="PC 1"` and `y="PC 2"` for the axes, and add the following columns as tool tips: `"CoinName", "Algorithm", "TotalCoinsMined", "TotalCoinSupply"`.
-
-6. Use the `altair` scatter plot to visualize the tradable cryptocurrencies using  `x="TotalCoinsMined"` and `y="TotalCoinSupply"` for the axes.
-
-7. Show the table of current tradable cryptocurrencies using the `display()` command.
-
-8. Remove all `hvplot` and Plotly Express references from your code.
-
-#### Complementary Resources
-
-* [Altair visualization library website](https://altair-viz.github.io/).
-
-* [Simple line chart using Altair](https://altair-viz.github.io/gallery/simple_line_chart.html).
-
-* [Simple Scatter Plot with Tooltips using Altair](https://altair-viz.github.io/gallery/scatter_tooltips.html)
-
-* [Color customization on Altair](https://github.com/altair-viz/altair/issues/921#issuecomment-395416682)
-
-* [Printing all rows from a DataFrame](https://stackoverflow.com/a/30691921/4325668)
-
-* [Install External Libraries and Kernels in Amazon SageMaker Notebook Instances](https://docs.aws.amazon.com/sagemaker/latest/dg/nbi-add-external.html)
 
 ### Submission
 
